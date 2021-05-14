@@ -1,14 +1,28 @@
 # XLSX TO JSON
 A node based approach to transform XLSX file into JSON.
 
-## How to use:
+## Usage:
+First of all install npm packages. 
 
-- By Defauly source file name is test.xlsx & destination file name is result.json in the same directory.
-- Source & Destination file name can be provided in arguments as mention below.
-- Source file name will be always before destination file name.
+```bash
+npm install
+```
+
+### Default Usage
+Below command can be use to convert test.xlsx file to result.json as output.
 
 ```bash
 node xlsxtojson
-node xlsxtojson source_file_name.xlsx
-node xlsxtojson source_file_name.xlsx destination_file_name.json
 ```
+
+### Additional Arguments
+Optional arguments can be provided as:
+
+```bash
+node xlsxtojson --src=test2.XLSX --dest=test.json --sheet=Sheet2
+```
+
+- `--src=xlsxfilename`: Source xlsx file name, if not provided default will be `test.xlsx`.
+- `--dest=jsonfilename`: destinatoin json file name, if not provided default will be `result.json`.
+- `--sheet=sheetname`: name of sheet in excel file, if not provided entore excel file will be transformed to json.
+
