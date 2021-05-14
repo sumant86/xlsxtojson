@@ -9,7 +9,7 @@ npm install
 ```
 
 ### Default Usage
-Below command can be use to convert test.xlsx file to result.json as output.
+Below command can be use to convert `test.xlsx` file to `result.json` as output.
 
 ```bash
 node xlsxtojson
